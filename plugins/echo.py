@@ -180,7 +180,7 @@ async def echo(bot, update):
             error_message += Translation.SET_CUSTOM_USERNAME_PASSWORD
         await chk.delete()
         
-        time.sleep(10)
+        await asyncio.sleep(10)
         await bot.send_message(
             chat_id=update.chat.id,
             text=Translation.NO_VOID_FORMAT_FOUND.format(str(error_message)),
@@ -209,7 +209,7 @@ async def echo(bot, update):
                 format_string = formats.get("format_note")
                 if format_string is None:
                     format_string = formats.get("format")
-                if "DASH" in format_string.upper():
+                if format_string and "DASH" in format_string.upper():
                     continue
           
                 format_ext = formats.get("ext")
