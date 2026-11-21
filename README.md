@@ -80,10 +80,12 @@ If you have any questions or would like to sponsor this project in another way, 
 
 <b><details><summary>Tap On Me For Deploy</summary>
 
-- Runtime : `Python 3`
-- Build Command : `pip install -r requirements.txt`
-- Start Command : `gunicorn app:app & python3 bot.py`
-- Go to https://uptimerobot.com/ and add a monitor to keep your bot alive
+- Recommended: deploy using the included `render.yaml` Blueprint.
+- Runtime: `Python 3` (the repository selects Python 3.12).
+- Build Command: `pip install -r requirements.txt`
+- Start Command: `gunicorn app:app --bind 0.0.0.0:$PORT & exec python3 bot.py`
+- Add the required environment variables listed below.
+- The health endpoint is `/`. An external uptime monitor is optional; it does not bypass free-service sleep limits.
 - Use these settings when adding a monitor
 
 ![](https://graph.org/file/899036d51bcd4defaa34e.jpg)
@@ -156,16 +158,16 @@ status – Check the bot's current status 🚀
 
 <b><details><summary>Tap On Me For Environment Variable</summary>
 
-* `APP_ID` Get it From mytelegram.org
+* `API_ID` Get it From my.telegram.org
 
-* `API_HASH` Get it From mytelegram.org
+* `API_HASH` Get it From my.telegram.org
 
 * `BOT_TOKEN` Get it from [@Botfather](https://t.me/botfather)
 
 * `DATABASE_URL` Get It From MongoDB Web
 Check How To Make MONGODB URL or [YouTube](https://youtu.be/VudXkbirhM8?feature=shared)
 
-* `OWNER_ID` Your telegram I'd use this bot [@UploadLinkToFileBot](https://telegram.dog/UploadLinkToFileBot) and use `/info`
+* `OWNER_ID` Your Telegram user ID. Use this bot [@UploadLinkToFileBot](https://telegram.dog/UploadLinkToFileBot) and use `/info`
 
 * `BOT_USERNAME` Add your bot username
 
@@ -173,7 +175,7 @@ Check How To Make MONGODB URL or [YouTube](https://youtu.be/VudXkbirhM8?feature=
 
 * `UPDATES_CHANNEL` Get it From [@MissRose_bot](https://t.me/MissRose_bot)
 
-* `SESSION_STR` Add your premium user session or skip (4GB)
+* `LOG_CHANNEL` Optional: numeric ID of your private log channel.\n\n* `UPDATES_CHANNEL` Optional: numeric ID of your updates channel. Leave blank to disable force-subscription.\n\n* `SESSION_STR` Add your premium user session or skip (4GB)
 
 ##### Shortlink settings
 
