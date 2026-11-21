@@ -154,38 +154,29 @@ total – View the total number of users 👥
 status – Check the bot's current status 🚀
 ```
 
-## Environment Variable
+## Environment Variables
 
-<b><details><summary>Tap On Me For Environment Variable</summary>
+<b><details><summary>Tap To View Environment Variables</summary>
 
-* `API_ID` Get it From my.telegram.org
+**Required**
 
-* `API_HASH` Get it From my.telegram.org
+* `BOT_TOKEN` — Get it from [@BotFather](https://t.me/BotFather).
+* `API_ID` — Get it from [my.telegram.org](https://my.telegram.org).
+* `API_HASH` — Get it from [my.telegram.org](https://my.telegram.org).
+* `DATABASE_URL` — Your MongoDB connection string.
+* `OWNER_ID` — Your numeric Telegram user ID.
 
-* `BOT_TOKEN` Get it from [@Botfather](https://t.me/botfather)
+**Optional**
 
-* `DATABASE_URL` Get It From MongoDB Web
-Check How To Make MONGODB URL or [YouTube](https://youtu.be/VudXkbirhM8?feature=shared)
+* `LOG_CHANNEL` — Numeric ID of your private log channel. Leave blank to disable logging.
+* `UPDATES_CHANNEL` — Numeric ID of your updates channel. Leave blank to disable force-subscription.
+* `BOT_USERNAME` — Bot username without the @ symbol.
+* `ADMIN` — Space-separated Telegram user IDs for additional admins.
+* `BANNED_USERS` — Space-separated Telegram user IDs to block.
+* `HTTP_PROXY` — Proxy URL, if required.
+* `TRUE_OR_FALSE` — Set to `true` to enable verification.
+* `SHORT_API`, `SHORT_DOMAIN`, `VERIFICATION` — Optional verification/shortlink settings.
 
-* `OWNER_ID` Your Telegram user ID. Use this bot [@UploadLinkToFileBot](https://telegram.dog/UploadLinkToFileBot) and use `/info`
-
-* `BOT_USERNAME` Add your bot username
-
-* `LOG_CHANNEL` Create a Private Channel and Send Any Message To That Channel and Forward to [@MissRose_bot](https://t.me/MissRose_bot) to Get Channel Id
-
-* `UPDATES_CHANNEL` Get it From [@MissRose_bot](https://t.me/MissRose_bot)
-
-* `LOG_CHANNEL` Optional: numeric ID of your private log channel.\n\n* `UPDATES_CHANNEL` Optional: numeric ID of your updates channel. Leave blank to disable force-subscription.\n\n* `SESSION_STR` Add your premium user session or skip (4GB)
-
-##### Shortlink settings
-
-* `TRUE_OR_FALSE` Set `False` off else `True`
-
-*  `SHORT_API` Add your shortner api
-
-*  `SHORT_DOMAIN` Add your shortlink domain like `shortlink.com`
-
-*  `VERIFICATION` Add your verification video link
 </b>
 </details>
 
